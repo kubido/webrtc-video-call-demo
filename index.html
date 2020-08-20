@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Call</title>
+
+</head>
+
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serifs;
+  }
+
+  #status {
+    white-space: pre-line
+  }
+
+  #video {
+    display: block;
+    margin-top: 1em;
+    border: 1px solid #aaa;
+  }
+</style>
+
+<body>
+  <h1 id="name"> .. </h1>
+  <pre id="status">loading...</pre>
+  <input type="text" placeholder="insert recipient id" id="uid" />
+  <button id="call"> Call </button>
+  <button id="stopcall"> Stop Call </button>
+
+  <video id="video" autoplay width=400 height=320></video>
+
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+
+</html>
